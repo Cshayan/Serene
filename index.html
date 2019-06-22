@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Serene</title>
+    <link rel="icon" href="Images/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1><i class="fas fa-music"></i> Serene</h1>
+      <p>Play music of your own to remove stress!</p>
+      <div class="timer">
+        <p id="timer-content">10:00</p>
+      </div>
+      <button class="mute"><i class="fas fa-volume-mute"></i> Mute</button>
+    </header>
+    <div class="app">
+      <video src="Video/waterfall.mp4" id="video" loop></video>
+      <div class="grid">
+        <!-- Play and Pause Container  -->
+        <div class="play-pause-container">
+          <button class="play-btn">
+            <img src="svg/play.svg" class="play" title="Play/Pause" />
+          </button>
+        </div>
+        <!-- Ends here -->
+
+        <!-- Timer Select Container -->
+        <div class="timer-select">
+          <h1>Select Timer of your own</h1>
+          <p>(Pause the music to set the timer)</p>
+          <button data-time="180" id="3-min">
+            <i class="fas fa-clock"></i> 3 Minute
+          </button>
+          <button data-time="300" id="5-min">
+            <i class="fas fa-clock"></i> 5 Minute
+          </button>
+          <button data-time="600" id="10-min">
+            <i class="fas fa-clock"></i> 10 Minute
+          </button>
+        </div>
+        <!-- Ends here -->
+      </div>
+
+      <section class="sec1">
+        <h2><i class="fas fa-music"></i> Create your own music</h2>
+      </section>
+
+      <!-- Song Container -->
+      <div class="song-container">
+        <div class="rain">
+          <p>Rain</p>
+          <img src="https://img.icons8.com/color/48/000000/heavy-rain.png" />
+          <!-- <button class="play-rain"><img src="svg/play.svg" class="play"></button> -->
+          <br /><br />
+          <input
+            type="range"
+            id="rain-vol"
+            class="slider"
+            min="0"
+            max="100"
+            value="50"
+          />
+        </div>
+        <div class="thunder">
+          <p>Thunder</p>
+          <img
+            src="https://img.icons8.com/ultraviolet/40/000000/cloud-lighting.png"
+          />
+          <!-- <button class="play-thunder"><img src="svg/play.svg" class="play"></button> -->
+          <br /><br />
+          <input
+            type="range"
+            id="thunder-vol"
+            class="slider"
+            min="0"
+            max="100"
+            value="1"
+          />
+        </div>
+        <div class="wind">
+          <p>Wind</p>
+          <img
+            src="https://img.icons8.com/ultraviolet/40/000000/wind-turbine.png"
+          />
+          <!-- <button class="play-wind"><img src="svg/play.svg" class="play"></button> -->
+          <br /><br />
+          <input
+            type="range"
+            id="wind-vol"
+            class="slider"
+            min="0"
+            max="100"
+            value="1"
+          />
+        </div>
+        <div class="cricket">
+          <p>Cricket</p>
+          <img src="https://img.icons8.com/ultraviolet/40/000000/insect.png" />
+          <!-- <button class="play-cricket"><img src="svg/play.svg" class="play"></button> -->
+          <br /><br />
+          <input
+            type="range"
+            id="cricket-vol"
+            class="slider"
+            min="0"
+            max="100"
+            value="1"
+          />
+        </div>
+        <div class="bird">
+          <p>Bird</p>
+          <img
+            src="https://img.icons8.com/ultraviolet/40/000000/hummingbird.png"
+          />
+          <!-- <button class="play-bird"><img src="svg/play.svg" class="play"></button> -->
+          <br /><br />
+          <input
+            type="range"
+            id="bird-vol"
+            class="slider"
+            min="0"
+            max="100"
+            value="1"
+          />
+        </div>
+      </div>
+      <!-- Ends Here -->
+
+      <section class="sec2">
+        <h2><i class="fab fa-adn"></i> About the project</h2>
+      </section>
+
+      <!-- About Container -->
+      <div class="about">
+        <div class="about-content">
+          <h1><i class="fas fa-music"></i> Serene</h1>
+          <p>Play music of your own to remove stress!</p>
+          <br />
+          This project is made keeping an eye on the trouble, tension and stress
+          that people of different ages go through their daily life. The people
+          can listen to the different tones and sounds of the nature even during
+          their work to focus and concentrate better on what they are currently
+          doing. This keep themselves isolated from the everyday sufferings,
+          stresses even for the slighest of time. One can set the timer for the
+          music, can mix different sounds of the nature to fit perfectly into
+          the environment they want to be in.
+        </div>
+      </div>
+    </div>
+    <!-- Ends here -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="left">
+          <h1><i class="fas fa-music"></i> Serene</h1>
+          <p>Play music of your own to remove stress!</p>
+        </div>
+
+        <div class="right">
+          Follow:
+          <div class="icons">
+            <a href="https://github.com/Cshayan" target="_blank" title="Github"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/shayan-chatterjee-a41771167/"
+              target="_blank"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a
+              href="https://www.quora.com/profile/Shayan-Chatterjee-8"
+              target="_blank"
+              title="Quora"
+              ><i class="fab fa-quora fa-2x"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/shayan.chatterjee/"
+              target="_blank"
+              title="Instagram"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="line"></div>
+
+      <div class="footer-bottom">
+         serene.com - &copy; <span id="year"></span>  
+      </div>
+    </footer>
+    <!-- Ends Here -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
